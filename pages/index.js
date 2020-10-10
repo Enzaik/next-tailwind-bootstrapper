@@ -1,4 +1,5 @@
 import Nav from '../components/nav';
+const nothing = '0';
 
 export default function IndexPage() {
   return (
