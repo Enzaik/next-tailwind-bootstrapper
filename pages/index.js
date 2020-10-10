@@ -1,5 +1,5 @@
+/* eslint react/prop-types: 0, react/react-in-jsx-scope: 0 */
 import Nav from '../components/nav';
-const nothing = '0';
 
 export default function IndexPage() {
   return (
