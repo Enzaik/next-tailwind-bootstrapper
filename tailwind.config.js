@@ -5,7 +5,7 @@ module.exports = {
   },
   purge: {
     layers: ['utilities'],
-    content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+    content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './pages/index.js'],
   },
   theme: {
     extend: {
@@ -15,5 +15,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/ui')],
 };
