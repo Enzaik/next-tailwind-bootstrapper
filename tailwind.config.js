@@ -4,8 +4,10 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    layers: ['utilities'],
-    content: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './pages/index.js'],
+    content: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
+    options: {
+      whitelistPatterns: [/^bg-/, /^text-/],
+    },
   },
   theme: {
     extend: {
