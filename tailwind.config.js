@@ -1,12 +1,9 @@
+const colors = require('tailwindcss/colors');
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
   purge: {
     content: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
     options: {
-      whitelistPatterns: [/^bg-/, /^text-/],
+      safelist: ['bg-green-400', 'bg-purple-600', 'bg-pink-600'],
     },
   },
   theme: {
